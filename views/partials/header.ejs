@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Slackey&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="/">Bizzyest</a>
+        
+              
+        <div class="theList">
+            <ul class="navbar-list">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+                <li class="nav-item " id="navbarMem">
+                    <% if(!user){ %>
+                    <a class="nav-link" href="#"   >
+                    My Account/Sign Up
+                    </a>
+                    
+                        <div class="nav-menu" aria-labelledby="navbar">
+                            <a class="nav-item" href="/users/login">Login</a>
+                            <a class="nav-item" href="/users/register">Register</a>
+                            
+                        </div>
+                    <% } else { %>
+                        <a class="nav-link" href="#"   >
+                                My Dashboard/Log Out
+                                </a>
+                        <div class="nav-menu" aria-labelledby="navbar">
+                           
+                            <a class="nav-item" href="/users/logout">Log Out</a>
+                            <a class="nav-item" href="/dashboard">Dashboard</a>
+                        </div>
+                        <% } %>
+                    </li>
+                  </ul>
+                  
+            </div>
+        </nav>

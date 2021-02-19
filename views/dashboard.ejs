@@ -1,0 +1,41 @@
+<%- include ("partials/header") %>
+<div class="dash text-center">
+    <div class="dashWelcome">
+        <h1 class="dashTitle">Dashboard</h1>
+        <p class="welcomeMessage">WELCOME <%= user.firstName.toUpperCase() %></p>
+        
+    </div>
+    <div class="dashBoard">
+        <div class="service" data-service="marketing">
+            <h2>Your Marketing Services</h2>
+            <div class="serviceData">
+                <p>Facebook Ads</p>
+                <p>Google Ads</p>
+                <p class="spec">Click A Service To See Details</p>
+            </div>
+        </div>
+        <div class="service" data-service="branding">
+            <h2>Your Branding Services</h2>
+            <div class="serviceData">
+                <p>Facebook Ads</p>
+                <p>Google Ads</p>
+                <p class="spec">Click A Service To See Details</p>
+            </div>
+        </div>
+        <div class="service" data-service="web">
+            <h2>Your Website Services</h2>
+            <div class="serviceData">
+                <p>Facebook Ads</p>
+                <p>Google Ads</p>
+                <p class="spec">Click A Service To See Details</p>
+            </div>
+        </div>
+    </div>
+    <div class="addService">
+        <p class="btn-red dull">Add Service</p>
+    </div>   
+</div>
+
+
+<a href="/users/logout" class="btn btn-secondary">Logout</a>
+<%- include ("partials/footer") %>

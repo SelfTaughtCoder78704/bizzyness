@@ -1,0 +1,51 @@
+<%- include ('partials/header.ejs') %>
+
+<main>
+    <div class="align">
+        <img src="/images/bizzySplash.png" id="mainImage" alt="Bizzyness Fun Picture">
+    <h1>Business presence + marketing & branding services & More</h1>
+    <% if(!user) { %>
+        <a href="/users/register" class="btn-red">Get Bizzy</a>
+    <% } else { %>
+        <a href="/dashboard" class="btn-red">Bizzy</a>
+    <% } %>
+    
+    
+    </div>
+    <img src="/images/person.png" alt="" class="person">
+</main>
+<div class="banner align">
+    <div class="formula align">
+        <p>Bizzyest Formula</p>
+    </div>
+</div>
+<div class="intro">
+    <div class="overlay">
+        <div class="intro-box">
+            <p class="first">
+                <span class="gb">G</span><span class="gr">o</span><span class="gy">o</span><span class="gb">g</span><span class="gg">l</span><span class="gr">e</span> my what? <span class="gr">Sitemap</span> where? <span class="gb">Analytics</span> who? Setting up things on my own... <br>
+        Forget the hassle of building landing pages, marketing schemes, setting up for SEO, and all of the other cr#p.
+            </p>
+            <div class="stop">
+                <img src="/images/stop.png" alt="">
+            </div>
+            <p class="introBottom">
+                Grow your business with the Bizzyest virtual team you’ve ever seen!
+            </p>
+            <p class="introEnd align">
+                We know how to grab potential client’s attention. 
+              <br>  ( Isn’t this page nice? )
+            </p>
+            
+            <% if(!user) { %>
+                <a href="/users/register" class="btn-red dif">Get Bizzy With Us</a>
+            <% } else { %>
+                <a href="/dashboard" class="btn-red">Bizzy</a>
+            <% } %>
+        </div>
+    </div>
+    
+</div>
+
+
+<%- include( 'partials/footer.ejs') %>
